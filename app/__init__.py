@@ -8,6 +8,7 @@ import os
 
 db = SQLAlchemy()
 
+
 def create_app():
     """Factory function to create and configure the Flask app."""
     app = Flask(__name__)
@@ -27,4 +28,3 @@ def create_app():
         register_routes(app)
 
     return app
-

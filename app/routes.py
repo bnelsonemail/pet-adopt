@@ -4,9 +4,10 @@ from flask import Flask, render_template, redirect
 from app.model import db, Pet
 from app.forms import AddPetForm, EditPetForm
 
+
 def register_routes(app):
     """Register application routes."""
-    
+
     @app.route('/')
     def show_homepage():
         """Show list of pets."""
