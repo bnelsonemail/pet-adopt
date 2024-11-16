@@ -1,9 +1,10 @@
 """models.py."""
 
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
+from app import db
 
 # Initialize SQLAlchemy
-db = SQLAlchemy()
+# db = SQLAlchemy()
 
 
 class Pet(db.Model):

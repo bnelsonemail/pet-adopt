@@ -1,10 +1,10 @@
 """app / __init__.py."""
 
+import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from config.config import DevelopmentConfig, ProductionConfig
 from app.routes import register_routes
-import os
 
 db = SQLAlchemy()
 

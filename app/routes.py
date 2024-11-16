@@ -1,6 +1,6 @@
 """app / routes.py."""
 
-from flask import Flask, render_template, redirect
+from flask import render_template, redirect
 from app.model import db, Pet
 from app.forms import AddPetForm, EditPetForm
 
