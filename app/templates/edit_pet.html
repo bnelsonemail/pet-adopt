@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">Edit Pet: {{ pet.name }}</h2>
+<form method="POST" class="row g-3">
+    {{ form.hidden_tag() }}
+    <div class="col-12">
+        <label for="photo_url" class="form-label">{{ form.photo_url.label }}</label>
+        {{ form.photo_url(class="form-control", id="photo_url") }}
+    </div>
+    <div class="col-12">
+        <label for="notes" class="form-label">{{ form.notes.label }}</label>
+        {{ form.notes(class="form-control", id="notes") }}
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+            {{ form.available(class="form-check-input", id="available") }}
+            <label for="available" class="form-check-label">{{ form.available.label }}</label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-success">Save Changes</button>
+    </div>
+</form>
+{% endblock %}

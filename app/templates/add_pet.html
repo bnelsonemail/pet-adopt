@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">Add a New Pet</h2>
+<form method="POST" class="row g-3">
+    {{ form.hidden_tag() }}
+    <div class="col-md-6">
+        <label for="name" class="form-label">{{ form.name.label }}</label>
+        {{ form.name(class="form-control", id="name") }}
+    </div>
+    <div class="col-md-6">
+        <label for="species" class="form-label">{{ form.species.label }}</label>
+        {{ form.species(class="form-select", id="species") }}
+    </div>
+    <div class="col-12">
+        <label for="photo_url" class="form-label">{{ form.photo_url.label }}</label>
+        {{ form.photo_url(class="form-control", id="photo_url") }}
+    </div>
+    <div class="col-md-6">
+        <label for="age" class="form-label">{{ form.age.label }}</label>
+        {{ form.age(class="form-control", id="age") }}
+    </div>
+    <div class="col-12">
+        <label for="notes" class="form-label">{{ form.notes.label }}</label>
+        {{ form.notes(class="form-control", id="notes") }}
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add Pet</button>
+    </div>
+</form>
+{% endblock %}
