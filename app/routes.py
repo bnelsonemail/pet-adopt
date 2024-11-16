@@ -1,8 +1,8 @@
 """app / routes.py."""
 
 from flask import render_template, redirect
-from app.model import db, Pet
-from app.forms import AddPetForm, EditPetForm
+from .model import db, Pet
+from .forms import AddPetForm, EditPetForm
 
 
 def register_routes(app):

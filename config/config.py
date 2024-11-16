@@ -1,4 +1,4 @@
-"""Config.py."""
+"""config / Config.py."""
 
 import os
 import logging

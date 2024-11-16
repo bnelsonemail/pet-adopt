@@ -2,11 +2,10 @@
 
 import os
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 from config.config import DevelopmentConfig, ProductionConfig
 from app.routes import register_routes
-
-db = SQLAlchemy()
+from app.extensions import db
 
 
 def create_app():
