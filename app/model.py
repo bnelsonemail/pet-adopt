@@ -1,13 +1,7 @@
 """models.py."""
 
-from flask_sqlalchemy import SQLAlchemy
 # from sqlalchemy.orm import sessionmaker
-
-# Initialize SQLAlchemy
-db = SQLAlchemy()
-# Example assuming you have a session instance
-# Session = sessionmaker(bind=engine)
-# session = Session()
+from app.extensions import db
 
 
 class Pet(db.Model):
